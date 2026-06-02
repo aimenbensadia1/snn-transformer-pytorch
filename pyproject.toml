@@ -1,0 +1,90 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "snn-transformer"
+version = "0.1.0"
+description = "PyTorch implementation of Eugene Izhikevich's LUT-based Spiking Neural Network Transformer"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Aimen Bensadia", email = "aimenbensadia118@gmail.com"},
+]
+keywords = [
+    "spiking-neural-network",
+    "transformer",
+    "pytorch",
+    "neuromorphic",
+    "lut",
+    "look-up-table",
+    "surrogate-gradient",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "torch>=2.0.0",
+    "numpy>=1.21.0",
+]
+
+[project.optional-dependencies]
+viz = [
+    "matplotlib>=3.5.0",
+]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+]
+all = [
+    "matplotlib>=3.5.0",
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/YOUR_USERNAME/snn-transformer-pytorch"
+Repository = "https://github.com/YOUR_USERNAME/snn-transformer-pytorch"
+Documentation = "https://github.com/YOUR_USERNAME/snn-transformer-pytorch#readme"
+"Bug Tracker" = "https://github.com/YOUR_USERNAME/snn-transformer-pytorch/issues"
+
+# ==============================================================================
+# Package discovery — expects src/ renamed to snn_transformer/
+# See ARCHITECTURE NOTES in README for the one-time rename command.
+# ==============================================================================
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["snn_transformer*"]
+
+# ==============================================================================
+# pytest
+# ==============================================================================
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
+
+# ==============================================================================
+# Coverage
+# ==============================================================================
+[tool.coverage.run]
+source = ["snn_transformer"]
+omit = ["tests/*", "experiments/*", "analysis/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if __name__ == .__main__.:",
+    "raise NotImplementedError",
+]
