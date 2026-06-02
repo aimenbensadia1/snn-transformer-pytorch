@@ -365,12 +365,6 @@ If you use this implementation in your research, please cite the original work:
 
 ---
 
-## License
-
-MIT License — see [LICENSE](LICENSE) for full text.
-
----
-
 <div align="center">
 <sub>Built with PyTorch &nbsp;·&nbsp; Targeting neuromorphic hardware &nbsp;·&nbsp; MIT licensed</sub>
 </div>
