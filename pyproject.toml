@@ -53,10 +53,10 @@ all = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/YOUR_USERNAME/snn-transformer-pytorch"
-Repository = "https://github.com/YOUR_USERNAME/snn-transformer-pytorch"
-Documentation = "https://github.com/YOUR_USERNAME/snn-transformer-pytorch#readme"
-"Bug Tracker" = "https://github.com/YOUR_USERNAME/snn-transformer-pytorch/issues"
+Homepage = "https://github.com/aimenbensadia1/snn-transformer-pytorch"
+Repository = "https://github.com/aimenbensadia1/snn-transformer-pytorch"
+Documentation = "https://github.com/aimenbensadia1/snn-transformer-pytorch#readme"
+"Bug Tracker" = "https://github.com/aimenbensadia1/snn-transformer-pytorch/issues"
 
 # ==============================================================================
 # Package discovery — expects src/ renamed to snn_transformer/

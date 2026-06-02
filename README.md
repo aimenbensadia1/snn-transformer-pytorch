@@ -153,7 +153,7 @@ snn-transformer-pytorch/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/snn-transformer-pytorch.git
+git clone https://github.com/aimenbensadia1/snn-transformer-pytorch.git
 cd snn-transformer-pytorch
 
 # 2. Install as an editable package (recommended)
